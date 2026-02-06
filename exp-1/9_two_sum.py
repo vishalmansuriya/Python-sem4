@@ -9,3 +9,13 @@
 # Output: [0,1] 
 # Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
+arr = [2,7,11,15]
+target=9
+
+def sum_p(arr,target):
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            if arr[i]+arr[j]==target:
+                return f"[{i},{j}]"
+                
+print(sum_p(arr,target))
