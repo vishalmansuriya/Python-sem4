@@ -14,8 +14,10 @@ target=9
 
 def sum_p(arr,target):
     for i in range(len(arr)):
-        for j in range(len(arr)):
+        for j in range(i+i,len(arr)):
             if arr[i]+arr[j]==target:
                 return f"[{i},{j}]"
                 
 print(sum_p(arr,target))
+
+
